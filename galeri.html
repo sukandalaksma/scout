@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri | Sukanda Laksma</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+<nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/img/logo/LOGO FULL.png" alt="Logo Ambalan Sukanda Laksma" style="height:40px;width:auto;object-fit:contain;">
+          <div class="nav-brand-text">
+            <span class="nav-brand-name">Ambalan Sukanda Laksma</span>
+            <span class="nav-brand-sub">SMAN 1 Sumberejo · Gudep 09.067 & 09.068</span>
+          </div>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">Tentang Ambalan</a></li>
+          <li><a href="kegiatan.html" class="nav-link">Program Kegiatan</a></li>
+          <li><a href="galeri.html" class="nav-link active">Galeri</a></li>
+          <li><a href="angkatan.html" class="nav-link">Angkatan</a></li>
+          <li><a href="struktur.html" class="nav-link">Struktur</a></li>
+          <li><a href="kontak.html" class="nav-link nav-cta">Kontak</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb" style="justify-content:center;"><a href="index.html">Home</a><span class="breadcrumb-sep">/</span><span>Galeri</span></div>
+        <span class="section-badge">Dokumentasi</span>
+        <h1 class="page-hero-title">Galeri <span style="color:var(--purple-400);">Ambalan</span></h1>
+        <p class="page-hero-sub">Kenangan indah dalam setiap kegiatan Ambalan Sukanda Laksma</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY MAIN -->
+  <section class="section gallery-section">
+    <div class="container">
+
+      <!-- Filter tabs -->
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px;justify-content:center;" class="animate-on-scroll">
+        <button onclick="filterGallery('all')" class="filter-btn active" data-filter="all" style="padding:8px 20px;border-radius:100px;font-family:var(--font-sans);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.3s;background:var(--purple-600);color:white;border:1.5px solid var(--purple-600);">Semua</button>
+        <button onclick="filterGallery('perkemahan')" class="filter-btn" data-filter="perkemahan" style="padding:8px 20px;border-radius:100px;font-family:var(--font-sans);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.3s;background:transparent;color:var(--neutral-300);border:1.5px solid rgba(255,255,255,0.15);">Perkemahan</button>
+        <button onclick="filterGallery('sf')" class="filter-btn" data-filter="sf" style="padding:8px 20px;border-radius:100px;font-family:var(--font-sans);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.3s;background:transparent;color:var(--neutral-300);border:1.5px solid rgba(255,255,255,0.15);">Scouting Festival</button>
+        <button onclick="filterGallery('sosial')" class="filter-btn" data-filter="sosial" style="padding:8px 20px;border-radius:100px;font-family:var(--font-sans);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.3s;background:transparent;color:var(--neutral-300);border:1.5px solid rgba(255,255,255,0.15);">Sosial</button>
+        <button onclick="filterGallery('latihan')" class="filter-btn" data-filter="latihan" style="padding:8px 20px;border-radius:100px;font-family:var(--font-sans);font-size:0.85rem;font-weight:600;cursor:pointer;transition:all 0.3s;background:transparent;color:var(--neutral-300);border:1.5px solid rgba(255,255,255,0.15);">Latihan</button>
+      </div>
+
+      <div class="animate-on-scroll" style="margin-bottom: 30px;">
+  <div style="background: linear-gradient(135deg, rgba(91, 45, 158, 0.2), rgba(26, 10, 46, 0.4)); 
+              border: 1px solid rgba(124, 58, 237, 0.3); 
+              border-radius: var(--radius-lg); 
+              padding: 24px; 
+              display: flex; 
+              align-items: center; 
+              justify-content: space-between; 
+              gap: 20px;
+              flex-wrap: wrap;">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <div style="font-size: 2.5rem;">📂</div>
+      <div>
+        <h3 style="color: var(--white); margin: 0; font-size: 1.1rem; font-weight: 700;">Dokumentasi Lengkap</h3>
+        <p style="color: var(--neutral-400); margin: 4px 0 0; font-size: 0.85rem;">Lihat dan unduh ribuan foto kegiatan Ambalan di Google Drive kami.</p>
+      </div>
+    </div>
+    <a href="URL_GOOGLE_DRIVE_ANDA_DISINI" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; white-space: nowrap;">
+      <span>Buka Google Drive</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+    </a>
+  </div>
+</div>
+
+      <!-- Gallery grid -->
+<section class="section">
+
+  <div class="container">
+
+    <div class="gallery-grid" id="gallery-grid">
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i1.JPG" alt="Giat 1">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i2.JPG" alt="Giat 2">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i3.JPG" alt="Giat 3">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i4.JPG" alt="Giat 4">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i5.JPG" alt="Giat 5">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i6.JPG" alt="Giat 6">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i1.JPG" alt="Giat 7">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i2.jpg" alt="Giat 8">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i3.JPG" alt="Giat 9">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i4.JPG" alt="Giat 10">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i5.JPG" alt="Giat 11">
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/img/images/i6.JPG" alt="Giat 12">
+      </div>
+    </div>
+  </div>
+
+</section>
+      <!-- Upload notice -->
+      <div style="text-align:center;margin-top:48px;padding:40px;background:var(--neutral-800);border-radius:var(--radius-xl);border:1.5px dashed rgba(124,58,237,0.3);" class="animate-on-scroll">
+        <div style="font-size:2.5rem;margin-bottom:12px;">📸</div>
+        <h3 style="color:var(--white);font-weight:700;margin-bottom:8px;">Punya foto kegiatan?</h3>
+        <p style="color:var(--neutral-400);font-size:0.9rem;margin-bottom:20px;">Upload dan bagikan momen berharga kegiatan ambalan melalui media sosial kami dengan tagar <strong style="color:var(--purple-400);">#sukandalaksma</strong></p>
+        <a href="https://www.instagram.com/ambalan_sukanda_laksma" target="_blank" class="btn btn-primary" style="display:inline-flex;">📸 Instagram Kami</a>
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+<footer class="footer" style="background:#0f172a; padding:70px 0 30px; border-top:1px solid rgba(255,255,255,0.05); font-family:sans-serif;">
+  
+  <div class="container" style="max-width:1200px; margin:0 auto; padding:0 20px;">
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:50px; margin-bottom:50px;">
+
+      <!-- LOGO & DESKRIPSI -->
+      <div style="grid-column: span 1.5;">
+
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:20px;">
+          <img 
+            src="assets/img/logo/LOGO FULL.png" 
+            alt="Logo Ambalan Sukanda Laksma"
+            style="height:42px; width:auto;"
+          >
+          <span style="color:#fff; font-weight:800; font-size:1.25rem; letter-spacing:-0.5px;">
+            Sukanda Laksma
+          </span>
+        </div>
+
+        <p style="color:#94a3b8; font-size:0.9rem; line-height:1.7; margin-bottom:25px; max-width:320px;">
+          Wadah pembinaan karakter, kepemimpinan, dan persaudaraan pramuka di SMAN 1 Sumberejo sejak 2006.
+        </p>
+
+        <div style="display:flex; gap:12px;">
+
+          <a href="https://www.instagram.com/ambalan_sukanda_laksma" target="_blank" rel="noopener"
+          style="width:40px; height:40px; border-radius:10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; transition:0.3s;" title="Instagram">
+            <img src="https://cdn.simpleicons.org/instagram/ffffff" style="width:18px;">
+          </a>
+
+          <a href="https://youtube.com/@ambalansukandalaksma4130" target="_blank" rel="noopener"
+          style="width:40px; height:40px; border-radius:10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; transition:0.3s;" title="YouTube">
+            <img src="https://cdn.simpleicons.org/youtube/ffffff" style="width:18px;">
+          </a>
+
+          <a href="https://www.tiktok.com/@pramukasmanis" target="_blank" rel="noopener"
+          style="width:40px; height:40px; border-radius:10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; transition:0.3s;" title="TikTok">
+            <img src="https://cdn.simpleicons.org/tiktok/ffffff" style="width:18px;">
+          </a>
+
+          <a href="https://www.facebook.com/share/1D9H3doaBR/" target="_blank" rel="noopener"
+          style="width:40px; height:40px; border-radius:10px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; transition:0.3s;" title="Facebook">
+            <img src="https://cdn.simpleicons.org/facebook/ffffff" style="width:18px;">
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- MENU UTAMA -->
+      <div>
+        <h4 style="color:#fff; font-size:0.85rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:25px;">
+          Menu Utama
+        </h4>
+
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="margin-bottom:12px;"><a href="index.html" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Beranda</a></li>
+          <li style="margin-bottom:12px;"><a href="about.html" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Profil Ambalan</a></li>
+          <li style="margin-bottom:12px;"><a href="galeri.html" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Galeri Foto</a></li>
+          <li style="margin-bottom:12px;"><a href="kontak.html" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <!-- INFORMASI -->
+      <div>
+        <h4 style="color:#fff; font-size:0.85rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:25px;">
+          Informasi
+        </h4>
+
+        <ul style="list-style:none; padding:0; margin:0;">
+          <li style="margin-bottom:12px;"><a href="about.html#sejarah" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Sejarah</a></li>
+          <li style="margin-bottom:12px;"><a href="about.html#sandi" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Sandi Ambalan</a></li>
+          <li style="margin-bottom:12px;"><a href="struktur.html" style="color:#94a3b8; text-decoration:none; font-size:0.9rem;">Struktur Organisasi</a></li>
+        </ul>
+      </div>
+
+      <!-- SEKRETARIAT -->
+      <div>
+        <h4 style="color:#fff; font-size:0.85rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; margin-bottom:25px;">
+          Sekretariat
+        </h4>
+
+        <p style="color:#94a3b8; font-size:0.9rem; line-height:1.6; margin-bottom:15px;">
+          SMAN 1 Sumberejo, Kec. Sumberejo, Tanggamus, Lampung.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div style="border-top:1px solid rgba(255,255,255,0.05); padding-top:30px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px;">
+
+      <p style="color:#64748b; font-size:0.8rem; margin:0;">
+        © 2026 <span style="color:#818cf8; font-weight:600;">Ambalan Sukanda Laksma</span>. All rights reserved.
+      </p>
+
+      <div style="display:flex; align-items:center; gap:15px;">
+        <span style="width:6px; height:6px; background:#818cf8; border-radius:50%;"></span>
+
+        <p style="color:#818cf8; font-size:0.75rem; font-weight:700; letter-spacing:2px; text-transform:uppercase; margin:0;">
+          Satu Waktu · Satu Perilaku
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
